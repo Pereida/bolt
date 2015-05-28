@@ -357,7 +357,7 @@ class Storage
         $fieldvalues['slug'] = $this->getUri($fieldvalues['slug'], $getId, $contenttype['slug'], false, false);
 
         /**
-        * Replace special characters for HTML 5 entities
+        * Replace special characters for HTML 5 entities.
         * Pages/Entries/Showcases update using this method.
         */
         $fieldvalues['title'] = htmlspecialchars($fieldvalues['title'], ENT_HTML5);
